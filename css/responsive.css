@@ -186,13 +186,41 @@
     top: -130px;
   }
 
-  .hero-badge {
+  /* .hero-badge {
     position: static;
     margin-top: 2px;
     margin-left: 0px;
     max-width: 260px;
+    
     top: 40px;
-    /* z-index: 1 !important; */
+    height: 100px;
+    
+  } */
+.hero-badge {
+    position: static;
+    /* centre the badge horizontally in the page */
+    width: fit-content;
+    max-width: 100%;
+    margin: 16px auto 0;
+    padding: 12px 20px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .hero-badge img {
+    height: 80px;
+    /* vertical-align: center; */
+  }
+
+  /* "Our brand" text: same size, vertically centred beside the logo */
+  .hero-badge span {
+    top: 15px;
+    left: 0;
+    line-height: 1.2;
+    align-self: center;
+    /* vertical-align: middle; */
   }
 
   .cat-grid,
@@ -314,6 +342,7 @@
   .info-card {
     flex-direction: column;
   }
+  
 }
 
 /* Keep the sticky footer content from sitting under the floating WhatsApp button */
